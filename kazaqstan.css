@@ -18,7 +18,7 @@
     padding-left: 30px;
 }
 .container .images {
-    padding-left: 140px;
+    padding-left: 220px;
 }
 .container .images img:nth-child(1){
     width: 450px;
@@ -32,9 +32,9 @@
     width: 870px;
 }
 .text{
-    width: 78%;
+    width: 65%;
     height: auto;
-    margin-left: 4%;
+    margin-left: -1%;
     padding: 20px 0;
 }
 @media screen and (max-width: 600px) {

@@ -98,10 +98,9 @@ body {
 display: flex;
     flex-wrap: wrap;
   } .container2 img{
-    width :160px;
-    height: 180px;
-display: flex;
-    flex-wrap: wrap;
+    width :150px;
+    height: 160px;
+        margin-left: 13px;
   }
 }
 
@@ -162,9 +161,11 @@ p {
 
 .logo1{
   width: 125px !important;
+
 }
 .logo2{
   width: 125px !important;
+
 }
 
 /* padding css */

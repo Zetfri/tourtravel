@@ -1,0 +1,941 @@
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta charset="UTF-8"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta name="description" content="Author: HiBootstrap, Category: Tourism, Multipurpose, HTML, SASS, Bootstrap"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; title &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Usbekistanreise.uz</title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/boxicons.min.css">&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/animate.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/nice-select.css">&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/magnific-popup.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/meanmenu.min.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/style.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/responsive.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="assets/css/theme-dark.css"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="icon" href="assets/img/favicon.png" type="image/png"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    function sendToTelegram(event) {&ndash;&gt;-->
+<!--&lt;!&ndash;        event.preventDefault();&ndash;&gt;-->
+
+<!--&lt;!&ndash;        const botToken = '7276038556:AAGtY4B3y3Ewojfjacmgf5HSjB98kFLNz3I';&ndash;&gt;-->
+<!--&lt;!&ndash;        const chatId = '7151774589';&ndash;&gt;-->
+
+<!--&lt;!&ndash;        const name = document.getElementById('name').value;&ndash;&gt;-->
+<!--&lt;!&ndash;        const email = document.getElementById('email').value;&ndash;&gt;-->
+<!--&lt;!&ndash;        const subject = document.getElementById('subject').value;&ndash;&gt;-->
+<!--&lt;!&ndash;        const message = document.getElementById('message').value;&ndash;&gt;-->
+
+<!--&lt;!&ndash;        const text = `New message:\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;&ndash;&gt;-->
+
+<!--&lt;!&ndash;        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {&ndash;&gt;-->
+<!--&lt;!&ndash;            method: 'POST',&ndash;&gt;-->
+<!--&lt;!&ndash;            headers: {&ndash;&gt;-->
+<!--&lt;!&ndash;                'Content-Type': 'application/json',&ndash;&gt;-->
+<!--&lt;!&ndash;            },&ndash;&gt;-->
+<!--&lt;!&ndash;            body: JSON.stringify({&ndash;&gt;-->
+<!--&lt;!&ndash;                chat_id: chatId,&ndash;&gt;-->
+<!--&lt;!&ndash;                text: text,&ndash;&gt;-->
+<!--&lt;!&ndash;            }),&ndash;&gt;-->
+<!--&lt;!&ndash;        })&ndash;&gt;-->
+<!--&lt;!&ndash;            .then(response => response.json())&ndash;&gt;-->
+<!--&lt;!&ndash;            .then(data => {&ndash;&gt;-->
+<!--&lt;!&ndash;                if (data.ok) {&ndash;&gt;-->
+<!--&lt;!&ndash;                    alert('Message sent successfully!');&ndash;&gt;-->
+<!--&lt;!&ndash;                    document.getElementById('contactForm').reset();&ndash;&gt;-->
+<!--&lt;!&ndash;                } else {&ndash;&gt;-->
+<!--&lt;!&ndash;                    alert('Error sending message. Please try again.');&ndash;&gt;-->
+<!--&lt;!&ndash;                }&ndash;&gt;-->
+<!--&lt;!&ndash;            })&ndash;&gt;-->
+<!--&lt;!&ndash;            .catch(error => {&ndash;&gt;-->
+<!--&lt;!&ndash;                console.error('Error:', error);&ndash;&gt;-->
+<!--&lt;!&ndash;                alert('Error sending message. Please try again.');&ndash;&gt;-->
+<!--&lt;!&ndash;            });&ndash;&gt;-->
+
+<!--&lt;!&ndash;        return false;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<header class="header-area">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="top-header-area">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row align-items-between py-2">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="col-xl-12 col-lg-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="contact-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="content">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <i class='bx bx-phone'></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="tel:+998 997917757">+998 99 791 77 57</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="content">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <i class='bx bx-envelope'></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="mailto:usbekistan24@gmail.com">usbekistan24@gmail.com</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="content">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <i class='bx bx-map'></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#">Mo-So: 08:00 – 19:00</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <div class="main-navbar-area">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="main-responsive-nav">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="main-responsive-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="index.html">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img src="assets/img/logo1.png" class="logo1" alt="Logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <img src="assets/img/logo2.png" class="logo2" alt="Logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="main-nav">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <nav class="navbar navbar-expand-md navbar-light">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a class="navbar-brand" href="index.html">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/img/logo1.png" class="logo1" alt="Logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="assets/img/logo2.png" class="logo2" alt="Logo">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="collapse navbar-collapse mean-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="navbar-nav ms-auto">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="index.html" class="nav-link ">Startseite</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="about-us.html" class="nav-link"> Über mich</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <li class="nav-item"><a href="tours.html" class="nav-link">Reise - Angebote</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="feed-back.html" class="nav-link ">Fotogalerie</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <a href="contact.html" class="nav-link active"> Kontakt</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </nav>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</header>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<div class="page-title-area ptb-100">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="page-title-content">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1>Kontaktiere uns</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="item"><a href="index.html">Startseite</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                <li class="item"><a href="login.html"><i class='bx bx-chevrons-right'></i>Kontakt</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="bg-image">&ndash;&gt;-->
+<!--&lt;!&ndash;        <img src="assets/img/page-title-area/contact.jpg" alt="Demo Image">&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<div class="contact-section">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="main-form ptb-100">&ndash;&gt;-->
+<!--&lt;!&ndash;            <form id="contactForm" onsubmit="sendToTelegram(event)">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h3 class="sub-title">Kontaktiere uns </h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="input-icon"><i class='bx bx-user'></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input type="text" name="name" class="form-control" id="name" required="" data-error="Bitte geben Sie Ihre ein name" placeholder="Name"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="help-block with-errors"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="input-icon"><i class='bx bx-at'></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input type="email" name="email" class="form-control" id="email" required="" data-error="Bitte geben Sie Ihre ein email" placeholder="Email"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="help-block with-errors"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="input-icon"><i class='bx bx-comment-detail'></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Bitte eingeben thema" placeholder="Betreff"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="help-block with-errors"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="input-icon textarea"><i class='bx bx-envelope'></i></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <textarea name="message" id="message" class="form-control" cols="100" rows="6" required="" data-error="Bitte geben Sie Ihre ein Belegung" placeholder="Ihre Anfrage..."></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="help-block with-errors"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group check-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="form-check agree-label">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input name="gridCheck" value="I agree to the terms and privacy policy." class="form-check-input" type="checkbox" id="gridCheck" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <label class="form-check-label" for="gridCheck">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    Akzeptieren <a href="#">Sie die Allgemeinen Geschäftsbedingungen</a> Und <a href="#">Datenschutzbestimmungen.</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="help-block with-errors"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-lg-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button type="submit" class="btn-primary">nachricht senden</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div id="msgSubmit" class="h5 text-center hidden"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8"/>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--    <meta name="description" content="Author: HiBootstrap, Category: Tourism, Multipurpose, HTML, SASS, Bootstrap"/>-->
+<!--    &lt;!&ndash; title &ndash;&gt;-->
+<!--    <title>Usbekistanreise.uz</title>-->
+<!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/boxicons.min.css">-->
+<!--    <link rel="stylesheet" href="assets/css/animate.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">-->
+<!--    <link rel="stylesheet" href="assets/css/nice-select.css">-->
+<!--    <link rel="stylesheet" href="assets/css/magnific-popup.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/meanmenu.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/style.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/responsive.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/theme-dark.css"/>-->
+<!--    <link rel="icon" href="assets/img/favicon.png" type="image/png"/>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<script>-->
+<!--    function sendToTelegram(event) {-->
+<!--        event.preventDefault();-->
+
+<!--        const botToken = '7276038556:AAGtY4B3y3Ewojfjacmgf5HSjB98kFLNz3I';-->
+<!--        const chatId = '7151774589';-->
+
+<!--        const name = document.getElementById('name').value;-->
+<!--        const email = document.getElementById('email').value;-->
+<!--        const subject = document.getElementById('subject').value;-->
+<!--        const message = document.getElementById('message').value;-->
+
+<!--        const text = `New message:\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;-->
+
+<!--        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {-->
+<!--            method: 'POST',-->
+<!--            headers: {-->
+<!--                'Content-Type': 'application/json',-->
+<!--            },-->
+<!--            body: JSON.stringify({-->
+<!--                chat_id: chatId,-->
+<!--                text: text,-->
+<!--            }),-->
+<!--        })-->
+<!--            .then(response => response.json())-->
+<!--            .then(data => {-->
+<!--                if (data.ok) {-->
+<!--                    alert('Message sent successfully!');-->
+<!--                    document.getElementById('contactForm').reset();-->
+<!--                } else {-->
+<!--                    alert('Error sending message. Please try again.');-->
+<!--                }-->
+<!--            })-->
+<!--            .catch(error => {-->
+<!--                console.error('Error:', error);-->
+<!--                alert('Error sending message. Please try again.');-->
+<!--            });-->
+
+<!--        return false;-->
+<!--    }-->
+<!--</script>-->
+
+<!--<header class="header-area">-->
+<!--    <div class="top-header-area">-->
+<!--        <div class="container">-->
+<!--            <div class="row align-items-between py-2">-->
+<!--                <div class="col-xl-12 col-lg-12">-->
+<!--                    <div class="contact-info">-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-phone'></i>-->
+<!--                            <a href="tel:+998 997917757">+998 99 791 77 57</a>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-envelope'></i>-->
+<!--                            <a href="mailto:usbekistan24@gmail.com">usbekistan24@gmail.com</a>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-map'></i>-->
+<!--                            <a href="#">Mo-So: 08:00 – 19:00</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="main-navbar-area">-->
+<!--        <div class="main-responsive-nav">-->
+<!--            <div class="container">-->
+<!--                <div class="main-responsive-menu">-->
+<!--                    <div class="logo">-->
+<!--                        <a href="index.html">-->
+<!--                            <img src="assets/img/logo1.png" class="logo1" alt="Logo">-->
+<!--                            <img src="assets/img/logo2.png" class="logo2" alt="Logo">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="main-nav">-->
+<!--            <div class="container">-->
+<!--                <nav class="navbar navbar-expand-md navbar-light">-->
+<!--                    <a class="navbar-brand" href="index.html">-->
+<!--                        <img src="assets/img/logo1.png" class="logo1" alt="Logo">-->
+<!--                        <img src="assets/img/logo2.png" class="logo2" alt="Logo">-->
+<!--                    </a>-->
+<!--                    <div class="collapse navbar-collapse mean-menu">-->
+<!--                        <ul class="navbar-nav ms-auto">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="index.html" class="nav-link ">Startseite</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a href="about-us.html" class="nav-link"> Über mich</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item"><a href="tours.html" class="nav-link">Reise - Angebote</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="feed-back.html" class="nav-link ">Fotogalerie</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="contact.html" class="nav-link active"> Kontakt</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </nav>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<div class="page-title-area ptb-100">-->
+<!--    <div class="container">-->
+<!--        <div class="page-title-content">-->
+<!--            <h1>Kontaktiere uns</h1>-->
+<!--            <ul>-->
+<!--                <li class="item"><a href="index.html">Startseite</a></li>-->
+<!--                <li class="item"><a href="login.html"><i class='bx bx-chevrons-right'></i>Kontakt</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bg-image">-->
+<!--        <img src="assets/img/page-title-area/contact.jpg" alt="Demo Image">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="contact-section">-->
+<!--    <div class="container">-->
+<!--        <div class="main-form ptb-100">-->
+<!--            <form id="contactForm" onsubmit="sendToTelegram(event)">-->
+<!--                <h3 class="sub-title">Kontaktiere uns </h3>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-user'></i></div>-->
+<!--                            <input type="text" name="name" class="form-control" id="name" required="" data-error="Bitte geben Sie Ihre ein name" placeholder="Name"/>-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-at'></i></div>-->
+<!--                            <input type="email" name="email" class="form-control" id="email" required="" data-error="Bitte geben Sie Ihre ein email" placeholder="Email"/>-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-comment-detail'></i></div>-->
+<!--                            <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Bitte eingeben thema" placeholder="Betreff"/>-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon textarea"><i class='bx bx-envelope'></i></div>-->
+<!--                            <textarea name="message" id="message" class="form-control" cols="100" rows="6" required="" data-error="Bitte geben Sie Ihre ein Belegung" placeholder="Ihre Anfrage..."></textarea>-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group check-group">-->
+<!--                            <div class="form-check agree-label">-->
+<!--                                <input name="gridCheck" value="I agree to the terms and privacy policy." class="form-check-input" type="checkbox" id="gridCheck" required>-->
+<!--                                <label class="form-check-label" for="gridCheck">-->
+<!--                                    Akzeptieren <a href="#">Sie die Allgemeinen Geschäftsbedingungen</a> Und <a href="#">Datenschutzbestimmungen.</a>-->
+<!--                                </label>-->
+<!--                                <div class="help-block with-errors"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <button type="submit" class="btn-primary">nachricht senden</button>-->
+<!--                        <div id="msgSubmit" class="h5 text-center hidden"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+<!--&lt;!&ndash; end contact section &ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--    <meta name="description" content="Author: HiBootstrap, Category: Tourism, Multipurpose, HTML, SASS, Bootstrap" />-->
+<!--    &lt;!&ndash; title &ndash;&gt;-->
+<!--    <title>Usbekistanreise.uz</title>-->
+<!--    &lt;!&ndash; bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />-->
+<!--    &lt;!&ndash; font-awesome CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />-->
+<!--    &lt;!&ndash; box-icon CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/boxicons.min.css">-->
+<!--    &lt;!&ndash; animate CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/animate.min.css" />-->
+<!--    &lt;!&ndash; bootstrap date-picker CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">-->
+<!--    &lt;!&ndash; nice select CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/nice-select.css">-->
+<!--    &lt;!&ndash; magnific popup CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />-->
+<!--    &lt;!&ndash; owl-carousel CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />-->
+<!--    &lt;!&ndash; mean-menu CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />-->
+<!--    &lt;!&ndash; main style CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/style.css" />-->
+<!--    &lt;!&ndash; responsive CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/responsive.css" />-->
+<!--    &lt;!&ndash; theme dark CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/css/theme-dark.css" />-->
+<!--    &lt;!&ndash; favicon &ndash;&gt;-->
+<!--    <link rel="icon" href="assets/img/favicon.png" type="image/png"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; start header area &ndash;&gt;-->
+<!--<header class="header-area">-->
+<!--    &lt;!&ndash; start top header area &ndash;&gt;-->
+<!--    <div class="top-header-area">-->
+<!--        <div class="container">-->
+<!--            <div class="row align-items-between  py-2">-->
+<!--                <div class="col-xl-12 col-lg-12">-->
+<!--                    <div class="contact-info">-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-phone'></i>-->
+<!--                            <a href="tel:+998 997917757">+998 99 791 77 57</a>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-envelope'></i>-->
+<!--                            <a href="mailto:usbekistan24@gmail.com">usbekistan24@gmail.com</a>-->
+<!--                        </div>-->
+<!--                        <div class="content">-->
+<!--                            <i class='bx bx-map'></i>-->
+<!--                            <a href="#">Mo-So: 08:00 – 19:00</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; end top header area &ndash;&gt;-->
+
+<!--    &lt;!&ndash; start navbar area &ndash;&gt;-->
+<!--    <div class="main-navbar-area">-->
+<!--        <div class="main-responsive-nav">-->
+<!--            <div class="container">-->
+<!--                <div class="main-responsive-menu">-->
+<!--                    <div class="logo">-->
+<!--                        <a href="index.html">-->
+<!--                            <img src="assets/img/logo1.png" class="logo1" alt="Logo">-->
+<!--                            <img src="assets/img/logo2.png" class="logo2" alt="Logo">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="main-nav">-->
+<!--            <div class="container">-->
+<!--                <nav class="navbar navbar-expand-md navbar-light">-->
+<!--                    <a class="navbar-brand" href="index.html">-->
+<!--                        <img src="assets/img/logo1.png" class="logo1" alt="Logo">-->
+<!--                        <img src="assets/img/logo2.png" class="logo2" alt="Logo">-->
+<!--                    </a>-->
+<!--                    <div class="collapse navbar-collapse mean-menu">-->
+<!--                        <ul class="navbar-nav ms-auto">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="index.html" class="nav-link ">Startseite</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a href="about-us.html" class="nav-link"> Über mich</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item"><a href="tours.html" class="nav-link">Reise - Angebote</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="feed-back.html" class="nav-link ">Fotogalerie</a>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a href="contact.html" class="nav-link active"> Kontakt</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </nav>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; end navbar area &ndash;&gt;-->
+<!--</header>-->
+<!--&lt;!&ndash; end header area &ndash;&gt;-->
+
+<!--&lt;!&ndash; start page title area&ndash;&gt;-->
+<!--<div class="page-title-area ptb-100">-->
+<!--    <div class="container">-->
+<!--        <div class="page-title-content">-->
+<!--            <h1>Kontaktiere uns</h1>-->
+<!--            <ul>-->
+<!--                <li class="item"><a href="index.html">Startseite</a></li>-->
+<!--                <li class="item"><a href="login.html"><i class='bx bx-chevrons-right'></i>Kontakt</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bg-image">-->
+<!--        <img src="assets/img/page-title-area/contact.jpg" alt="Demo Image">-->
+<!--    </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end page title area &ndash;&gt;-->
+
+<!--&lt;!&ndash; start contact area &ndash;&gt;-->
+<!--<div class="contact-section">-->
+<!--    <div class="container">-->
+<!--        <div class="main-form ptb-100">-->
+<!--            <form id="contactForm">-->
+<!--                <h3 class="sub-title">Kontaktiere uns                        </h3>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-user'></i></div>-->
+<!--                            <input type="text" name="name" class="form-control" id="name" required="" data-error="Bitte geben Sie Ihre ein name" placeholder="Name" />-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-at'></i></div>-->
+<!--                            <input type="email" name="email" class="form-control" id="email" required="" data-error="Bitte geben Sie Ihre ein email" placeholder="Email" />-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon"><i class='bx bx-comment-detail'></i></div>-->
+<!--                            <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Bitte eingeben thema" placeholder="Betreff" />-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="input-icon textarea"><i class='bx bx-envelope'></i></div>-->
+<!--                            <textarea name="message" id="message" class="form-control" cols="100" rows="6" required="" data-error="Bitte geben Sie Ihre ein Belegung" placeholder="Ihre Anfrage..."></textarea>-->
+<!--                            <div class="help-block with-errors"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="form-group check-group">-->
+<!--                            <div class="form-check agree-label">-->
+<!--                                <input-->
+<!--                                        name="gridCheck"-->
+<!--                                        value="I agree to the terms and privacy policy."-->
+<!--                                        class="form-check-input"-->
+<!--                                        type="checkbox"-->
+<!--                                        id="gridCheck"-->
+<!--                                        required-->
+<!--                                >-->
+<!--                                <label class="form-check-label" for="gridCheck">-->
+<!--                                    Akzeptieren <a href="#">Sie die Allgemeinen Geschäftsbedingungen</a> Und <a href="#">Datenschutzbestimmungen.</a>-->
+<!--                                </label>-->
+<!--                                <div class="help-block with-errors"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <button type="submit" class="btn-primary">nachricht senden</button>-->
+<!--                        <div id="msgSubmit" class="h5 text-center hidden"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="contact-footer bg-light">-->
+<!--        <div class="container-fluid p-0">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-5">-->
+<!--                    <div class="content pt-100 pb-70 ">-->
+<!--                        <div class="info-content">-->
+<!--                            <h3 class="sub-title">Usbekistan </h3>-->
+<!--                            <h3 class="sub-title"> Jurabek Sharipov </h3>-->
+<!--                            <div class="content-list">-->
+<!--                                <i class='bx bx-phone' ></i>-->
+<!--                                <h6>Telefon / WhatsApp: +998 99 791 77 57</h6>-->
+<!--                            </div>-->
+<!--                            <div class="content-list">-->
+<!--                                <i class='bx bx-at' ></i>-->
+<!--                                <h6>E - Mail: usbekistan24@gmail.com</h6>-->
+<!--                            </div>-->
+<!--                            <div class="content-list">-->
+<!--                                <a href="https://www.instagram.com/usbekistanreise/">-->
+<!--                                    <i class='bx bxl-instagram' ></i>-->
+<!--                                </a>-->
+<!--                                <a href="https://www.facebook.com/jorabek.sharipov?mibextid=ZbWKwL">-->
+<!--                                    <i class='bx bxl-facebook' ></i>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="info-content">-->
+<!--                            <h3 class="sub-title">German</h3>-->
+<!--                            <h4 class="sub-title">Ellen Eichler</h4 >-->
+<!--                            <div class="content-list">-->
+<!--                                <i class='bx bx-phone' ></i>-->
+<!--                                <h6>Telefon / WhatsApp: +4917664875358</h6>-->
+<!--                            </div>-->
+<!--                            <div class="content-list">-->
+<!--                                <i class='bx bx-at' ></i>-->
+<!--                                <h6>E - Mail: ellen.eichler@gmx.net</h6>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-7">-->
+<!--                    <div class="contact-map">-->
+<!--                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47892.86427742074!2d60.30880373304571!3d41.389203596861776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfa41124c7ef7b%3A0xcec58b7c03c3e7a!2sKuhna%20Ark!5e0!3m2!1sen!2s!4v1718283174718!5m2!1sen!2s"></iframe>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; end contact section &ndash;&gt;-->
+
+<!--&lt;!&ndash; start footer area &ndash;&gt;-->
+<!--<footer class="footer-area">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-top pt-100 pb-70">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-5 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <div class="navbar-brand">-->
+<!--                            <a href="index.html">-->
+<!--                                <img src="assets/img/logo2.png" alt="Logo" />-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <p>Sie können den schönsten Ort träumen, erschaffen, entwerfen und bauen.</p>-->
+<!--                        <div class="contact-info">-->
+<!--                            <div class="content">-->
+<!--                                <a href="tel:+998997917757"><i class='bx bx-phone'></i>-->
+<!--                                    +998 99 791 77 57</a>-->
+<!--                            </div>-->
+<!--                            <div class="content">-->
+<!--                                <a href="mailto:usbekistan24@gmail.com"><i class='bx bx-envelope'></i>usbekistan24@gmail.com</a>-->
+<!--                            </div>-->
+<!--                            <div class="content">-->
+<!--                                <a href="#"><i class='bx bx-map'></i>Mo-So: 08:00 – 19:00</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <h5>Schnelle Links</h5>-->
+<!--                        <ul class="footer-links">-->
+<!--                            <li>-->
+<!--                                <a href="index.html">Startseite</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="about-us.html">Über mich</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="tours.html">Reise - Angebote</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="feed-back.html">Fotogalerie</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="contact.html">Kontakt</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <h5>Instagram-Beitrag                                </h5>-->
+<!--                        <img src="./assets/Uzbekistan_PasakaUzbekistana1C1.jpg" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <hr>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--&lt;!&ndash; end footer area &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; jquery JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.min.js"></script>-->
+<!--&lt;!&ndash; bootstrap JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.bundle.min.js"></script>-->
+<!--&lt;!&ndash; bootstrap datepicker JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap-datepicker.min.js"></script>-->
+<!--&lt;!&ndash; nice select JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.nice-select.min.js"></script>-->
+<!--&lt;!&ndash; magnific popup JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--&lt;!&ndash; filterizr JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.filterizr.min.js"></script>-->
+<!--&lt;!&ndash; owl carousel JS &ndash;&gt;-->
+<!--<script src="assets/js/owl.carousel.min.js"></script>-->
+<!--&lt;!&ndash; mean menu JS &ndash;&gt;-->
+<!--<script src="assets/js/meanmenu.min.js"></script>-->
+<!--&lt;!&ndash; form validator &ndash;&gt;-->
+<!--<script src="assets/js/form-validator.min.js"></script>-->
+<!--&lt;!&ndash; contact form JS &ndash;&gt;-->
+<!--<script src="assets/js/contact-form-script.js"></script>-->
+<!--&lt;!&ndash; ajax chimp JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.ajaxchimp.min.js"></script>-->
+<!--&lt;!&ndash; script JS &ndash;&gt;-->
+<!--<script src="assets/js/script.js"></script>-->
+
+
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash; start footer area &ndash;&gt;-->
+<!--<footer class="footer-area">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-top pt-100 pb-70">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-5 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <div class="navbar-brand">-->
+<!--                            <a href="index.html">-->
+<!--                                <img src="assets/img/logo2.png" alt="Logo" />-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <p>Sie können den schönsten Ort träumen, erschaffen, entwerfen und bauen.</p>-->
+<!--                        <div class="contact-info">-->
+<!--                            <div class="content">-->
+<!--                                <a href="tel:+998997917757"><i class='bx bx-phone'></i>-->
+<!--                                    +998 99 791 77 57</a>-->
+<!--                            </div>-->
+<!--                            <div class="content">-->
+<!--                                <a href="mailto:usbekistan24@gmail.com"><i class='bx bx-envelope'></i>usbekistan24@gmail.com</a>-->
+<!--                            </div>-->
+<!--                            <div class="content">-->
+<!--                                <a href="#"><i class='bx bx-map'></i>Mo-So: 08:00 – 19:00</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <h5>Schnelle Links</h5>-->
+<!--                        <ul class="footer-links">-->
+<!--                            <li>-->
+<!--                                <a href="index.html">Startseite</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="about-us.html">Über mich</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="tours.html">Reise - Angebote</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="feed-back.html">Fotogalerie</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="contact.html">Kontakt</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-5 col-sm-6 col-12">-->
+<!--                    <div class="footer-widget">-->
+<!--                        <h5>Instagram-Beitrag                                </h5>-->
+<!--                        <img src="./assets/Uzbekistan_PasakaUzbekistana1C1.jpg" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <hr>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--&lt;!&ndash; end footer area &ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash; jquery JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.min.js"></script>-->
+<!--&lt;!&ndash; bootstrap JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.bundle.min.js"></script>-->
+<!--&lt;!&ndash; bootstrap datepicker JS &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap-datepicker.min.js"></script>-->
+<!--&lt;!&ndash; nice select JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.nice-select.min.js"></script>-->
+<!--&lt;!&ndash; magnific popup JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--&lt;!&ndash; filterizr JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.filterizr.min.js"></script>-->
+<!--&lt;!&ndash; owl carousel JS &ndash;&gt;-->
+<!--<script src="assets/js/owl.carousel.min.js"></script>-->
+<!--&lt;!&ndash; mean menu JS &ndash;&gt;-->
+<!--<script src="assets/js/meanmenu.min.js"></script>-->
+<!--&lt;!&ndash; form validator &ndash;&gt;-->
+<!--<script src="assets/js/form-validator.min.js"></script>-->
+<!--&lt;!&ndash; contact form JS &ndash;&gt;-->
+<!--<script src="assets/js/contact-form-script.js"></script>-->
+<!--&lt;!&ndash; ajax chimp JS &ndash;&gt;-->
+<!--<script src="assets/js/jquery.ajaxchimp.min.js"></script>-->
+<!--&lt;!&ndash; script JS &ndash;&gt;-->
+<!--<script src="assets/js/script.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+

@@ -1463,18 +1463,24 @@ textarea.form-control {
 
 .home-banner-area.home-style-three .owl-carousel .slider-item.item-one {
   background: url("../img/banner/main-slider1.jpg") no-repeat center;
+  width: 100%;
+  height: 100vh !important;
   background-size: cover;
    
 }
 
 .home-banner-area.home-style-three .owl-carousel .slider-item.item-two {
   background: url("../img/banner/main-slider2.jpg") no-repeat center;
+  width: 100%;
+  height: 100vh !important;
   background-size: cover;
    
 }
 
 .home-banner-area.home-style-three .owl-carousel .slider-item.item-three {
   background: url("../img/banner/main-slider3.jpg") no-repeat center;
+  width: 100%;
+  height: 100vh !important;
   background-size: cover;
    
 }
@@ -1617,10 +1623,12 @@ textarea.form-control {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
+  display: none !important;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+        
 }
 
 .video-btn i {
@@ -2778,6 +2786,29 @@ textarea.form-control {
   .recent-tours-section .item-single .image img {
     width: 100% !important;
   }
+  .home-banner-area.home-style-three .owl-carousel .slider-item.item-one {
+    background: url("../img/banner/main-slider1.jpg") no-repeat center;
+    width: 100%;
+    height: auto !important;
+    background-size: cover;
+     
+  }
+  
+  .home-banner-area.home-style-three .owl-carousel .slider-item.item-two {
+    background: url("../img/banner/main-slider2.jpg") no-repeat center;
+    width: 100%;
+    height: auto !important;
+    background-size: cover;
+     
+  }
+  
+  .home-banner-area.home-style-three .owl-carousel .slider-item.item-three {
+    background: url("../img/banner/main-slider3.jpg") no-repeat center;
+    width: 100%;
+    height: auto !important;
+    background-size: cover;
+     
+  }
 }
 
 .recent-tours-section .item-single i {
@@ -3641,7 +3672,7 @@ textarea.form-control {
 }
 
 .page-title-area .page-title-content {
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
 }
 
